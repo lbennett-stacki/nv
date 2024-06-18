@@ -39,7 +39,6 @@ Majors only. e.g. 0x01, 0x02, 0x03
 16-bit ones' complement of the header and payload.
 The checksum is initially set to 0 for checksum calculation.
 
-1. Decode payload as bytes
 1. Generate a header version, opcode, 0x0 (nil checksum), payload length
 1. Group by 16 bit words
 1. Pad 0's to complete words
@@ -58,4 +57,4 @@ The checksum is initially set to 0 for checksum calculation.
 1. Add checksum
 1. All 1's, else error
 
-TODO: double check
+> TODO: double check
